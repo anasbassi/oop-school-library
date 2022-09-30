@@ -7,6 +7,7 @@
 ## Built With
 
 - Ruby
+- Ruby runtime environment
 
 ## Getting Started
 
@@ -22,6 +23,9 @@ To get a local copy up and running follow these simple example steps.
     ```git clone https://github.com/anasbassi/oop-school-library.git```
 - Change directory
     `cd oop-school-library`
+- To run app
+    `irb`
+    `require_relative 'main'`
 
 ## Authors
 
