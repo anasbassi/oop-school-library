@@ -3,6 +3,7 @@ require_relative 'person'
 require_relative 'student'
 require_relative 'teacher'
 require_relative 'rental'
+require 'date'
 
 class App
   attr_accessor :people, :books
@@ -45,7 +46,7 @@ class App
     person_index = gets.chomp.to_i
     print "Date: #{Date.today}"
     date = gets.chomp
-    rental = Rental.new(date, @books[book_index], @people[person_index])
+    rental = Rental.new(@people[person_index], @books[book_index], date)
     @rentals.push(rental)
     puts 'Rental created successfully'
   end
